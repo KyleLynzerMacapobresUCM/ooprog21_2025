@@ -1,22 +1,19 @@
-
 package Chapter_3;
 
 public class DemoGrossPay {
     public static void main(String[] args) {
-        // Set hours worked
-        double hoursWorked = 40;
-
-        // Call the method to calculate and display gross pay
-        calculateGross(hoursWorked);
+        displayGrossPay(10.0);
+        displayGrossPay(25.0);
+        displayGrossPay(37.5);
     }
 
-    // This method calculates gross pay and prints the result
-    public static void calculateGross(double hours) {
-        double hourlyRate = 22.75;
-        double grossPay = hours * hourlyRate;
+    public static double calculateGross(double hoursWorked) {
+        final double HOURLY_RATE = 22.75;
+        return hoursWorked * HOURLY_RATE;
+    }
 
-        System.out.println("Hours Worked: " + hours);
-        System.out.println("Hourly Rate: " + hourlyRate);
-        System.out.println("Gross Pay: " + grossPay);
+    public static void displayGrossPay(double hours) {
+        double gross = calculateGross(hours);
+        System.out.println(hours + " hours at $22.75 per hour is $" + gross);
     }
 }
