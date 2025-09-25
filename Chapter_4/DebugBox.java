@@ -5,7 +5,7 @@ public class DebugBox
     private int length;
     private int height;
 
-    // Default constructor
+ 
     public DebugBox()
     {
         length = 1;
@@ -13,21 +13,21 @@ public class DebugBox
         height = 1;
     }
 
-    // Parameterized constructor
+   
     public DebugBox(int width, int length, int height)
     {
         this.width = width;
-        this.length = length;  // ✅ fixed
-        this.height = height;  // ✅ fixed
+        this.length = length;  
+        this.height = height; 
     }
 
-    // Method to display box data
+    
     public void showData()
     {
         System.out.println("Width: " + width + " Length: " + length + " Height: " + height);
     }
 
-    // Method to compute volume
+    
     public double getVolume()
     {
         return length * width * height;
