@@ -1,4 +1,5 @@
 package Chapter_4;
+
 public class DebugBox
 {
     private int width;
