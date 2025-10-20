@@ -6,7 +6,7 @@ public class BankBalance {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
 
-        double interestRate = 0.03; // 3% interest rate
+        double interestRate = 0.03; //3% interest rate
         double balance;
         int year = 0;
         int choice;
